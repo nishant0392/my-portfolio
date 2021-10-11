@@ -4,14 +4,24 @@
 
         <div class="section-title">
             <h2>Gallery</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
-                sit
-                in iste officiis commodi quidem hic quas.</p>
+            <p>Here is a list of few of my talents on display.</p>
         </div>
 
 
+        <div class="gallery-outer">
+            <div class="gallery-inner">
 
+                <div class="gallery-item" *ngFor="let item of videos">
+                    <iframe  [src]="item.url | safe"></iframe>
+                    <div class="iframe-mask" (click)="openModal(item)"></div>
+                    <div class="gallery-item-body">
+                        <h6 class="title">{{ item.title }}</h6>
+                        <p class="description">{{ item.description }}</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 </section>
 <!-- End Gallery Section -->
