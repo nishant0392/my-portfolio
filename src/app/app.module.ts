@@ -10,7 +10,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { GalleryComponent } from './gallery/gallery.component';
 
 import { SafeUrlPipe } from './shared/safe-url.pipe';
-import { ModalComponent } from './shared/modal/modal.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -20,12 +20,12 @@ import { ModalComponent } from './shared/modal/modal.component';
     ContactComponent,
     PortfolioComponent,
     GalleryComponent,
-    SafeUrlPipe,
-    ModalComponent
+    SafeUrlPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

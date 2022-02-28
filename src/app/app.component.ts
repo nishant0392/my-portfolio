@@ -9,7 +9,7 @@ import Typed from 'typed.js';
 export class AppComponent {
 
   public options = {
-    strings: ["Writer", "Developer"],
+    strings: ["Writer", "Web Developer", "Actor"],
     typeSpeed: 200,
     loop: true
   };

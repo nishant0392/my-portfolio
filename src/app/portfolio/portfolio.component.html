@@ -1,132 +1,49 @@
 <!-- ======= Portfolio Section ======= -->
-
-<!--*****  Gallery component is Portfolio now  *****-->
-
-<!-- <section id="portfolio" class="portfolio section-bg">
+<section id="portfolio" class="portfolio section-bg">
     <div class="container">
 
         <div class="section-title">
             <h2>Portfolio</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
-                sit
-                in iste officiis commodi quidem hic quas.</p>
+            <p>Here is a list of few of my talents on display. You may also watch them on
+                <a [href]="youtubeChannelLink" target="_blank">my youtube channel</a>.
+            </p>
         </div>
 
-        <div class="row" data-aos="fade-up">
-            <div class="col-lg-12 d-flex justify-content-center">
-                <ul id="portfolio-flters">
-                    <li data-filter="*" class="filter-active">All</li>
-                    <li data-filter=".filter-app">App</li>
-                    <li data-filter=".filter-card">Card</li>
-                    <li data-filter=".filter-web">Web</li>
-                </ul>
+
+        <div class="portfolio-outer">
+            <div class="portfolio-inner">
+
+                <div class="portfolio-item" *ngFor="let item of videos">
+                    <iframe [src]="item.url | safe"></iframe>
+                    <div class="iframe-mask" (click)="showContent(item)"></div>
+                    <div class="portfolio-item-body">
+                        <h6 class="title">{{ item.title }}</h6>
+                        <p class="description">{{ item.description }}</p>
+                    </div>
+                </div>
+
             </div>
         </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox"
-                            title="App 1"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox"
-                            title="Web 3"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox"
-                            title="App 2"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox"
-                            title="Card 2"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox"
-                            title="Web 2"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox"
-                            title="App 3"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox"
-                            title="Card 1"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox"
-                            title="Card 3"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox"
-                            title="Web 3"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
     </div>
-</section> -->
+</section>
 <!-- End Portfolio Section -->
+
+<!-- Modal -->
+<ng-template #myModal let-modal>
+    <div id="myModal">
+        <div class="close-button-div" (click)="modal.dismiss('Cross click')">
+            <img src="assets/img/close-icon.svg" />
+        </div>
+        <div class="modal-content">
+            <div class="myModal-custom-content">
+                <div class="title-div">
+                    {{ clickedVideoHeading }}
+                </div>
+                <div class="content-div">
+                    <iframe [src]="clickedVideoUrl | safe"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>
+<!-- END: Modal -->
