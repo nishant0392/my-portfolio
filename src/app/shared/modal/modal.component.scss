@@ -1,0 +1,107 @@
+#myModal-login {
+    z-index: 10000;
+}
+
+#myModal-login .modal-content {
+    width: 50% !important;
+    margin: 75px auto;
+}
+
+#myModal-login .myModal-custom-content {
+    width: 100%;
+    display: flex;
+    color: white;
+    min-height: 78vh;
+}
+
+.login-signup .main {
+    flex: 1.5;
+    padding: 2em 2em;
+    border-radius: 0 5px 5px 0;
+    position: relative;
+}
+
+.login-signup .close-modal .icon-close {
+    font-size: 1.8em;
+    color: #fff;
+    position: absolute;
+    top: -3px;
+    right: -35px;
+    cursor: pointer;
+}
+
+/** -----  Media Queries ----- **/
+@media screen and (min-width: 951px) and (max-width: 1024px) {
+    #myModal-login .modal-content {
+        width: 60% !important;
+    }
+}
+
+@media screen and (min-width: 851px) and (max-width: 950px) {
+    #myModal-login .modal-content {
+        width: 65% !important;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 850px) {
+    #myModal-login .modal-content {
+        width: 70% !important;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width: 800px) {
+    #myModal-login .modal-content {
+        width: 75% !important;
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width: 750px) {
+    #myModal-login .modal-content {
+        width: 85% !important;
+        margin: 50px 40px;
+    }
+}
+
+@media screen and (min-width: 610px) and (max-width: 650px) {
+    #myModal-login .modal-content {
+        width: 90% !important;
+        margin: 50px 12px;
+    }
+}
+
+@media screen and (max-width: 609px) {
+    #myModal-login .modal-content {
+        width: 410px !important;
+        margin: 50px auto;
+    }
+
+    .login-signup .close-modal .icon-close {
+        top: -214px;
+    }
+
+    #myModal-login .myModal-custom-content {
+        flex-flow: column wrap;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .login-signup .close-modal .icon-close {
+        padding: 1px 4px;
+        right: 0px;
+        top: -211px;
+        font-size: 1.5em;
+        background-color: cornflowerblue;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #myModal-login .modal-content {
+        width: 360px !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #myModal-login .modal-content {
+        width: 318px !important;
+    }
+}

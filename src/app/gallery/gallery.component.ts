@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class GalleryComponent implements OnInit {
 
   public videos: any[] = [];
+  public clickedVideoUrl: string;
+  public youtubeChannelLink: string = "htttp://www.youtube.com/channel/UCjn3Re0MRJq2RMR7zkMrtmA";
 
   constructor() { }
 
@@ -43,6 +45,7 @@ export class GalleryComponent implements OnInit {
 
   openModal(item) {
     console.log(item)
+    this.clickedVideoUrl = item;
   }
 
 }

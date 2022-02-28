@@ -4,7 +4,8 @@
 
         <div class="section-title">
             <h2>Portfolio</h2>
-            <p>Here is a list of few of my talents on display.</p>
+            <p>Here is a list of few of my talents on display. You may also watch them on 
+                <a [href]="youtubeChannelLink" target="_blank">my youtube channel</a>.</p>
         </div>
 
 
@@ -25,3 +26,6 @@
     </div>
 </section>
 <!-- End Gallery Section -->
+
+<!-- Modal -->
+<modal [url]="clickedVideoUrl"></modal>

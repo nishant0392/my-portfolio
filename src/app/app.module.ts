@@ -10,6 +10,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { GalleryComponent } from './gallery/gallery.component';
 
 import { SafeUrlPipe } from './shared/safe-url.pipe';
+import { ModalComponent } from './shared/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SafeUrlPipe } from './shared/safe-url.pipe';
     ContactComponent,
     PortfolioComponent,
     GalleryComponent,
-    SafeUrlPipe
+    SafeUrlPipe,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
