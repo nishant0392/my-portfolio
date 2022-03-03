@@ -20,9 +20,9 @@ export class PortfolioComponent implements OnInit {
   ngOnInit(): void {
     this.videos = [
       {
-        title: 'Sample video',
-        url: 'https://www.youtube.com/embed/EngW7tLk6R8',
-        description: 'This is a sample video.'
+        title: 'Tune haath jo thaama song',
+        url: 'https://www.youtube.com/embed/XyllzBacoKY',
+        description: 'Not a singer. Only for demo purpose.'
       },
       {
         title: 'Placeholder video',

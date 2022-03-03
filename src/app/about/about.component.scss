@@ -12,6 +12,12 @@
         display: flex;
     }
     strong {
-        width: 80px;
+        width: 90px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .personal-details {
+        margin-bottom: 0;
     }
 }
