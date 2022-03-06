@@ -20,14 +20,16 @@ export class PortfolioComponent implements OnInit {
   ngOnInit(): void {
     this.videos = [
       {
-        title: 'Tune haath jo thaama song',
-        url: 'https://www.youtube.com/embed/XyllzBacoKY',
-        description: 'Not a singer. Only for demo purpose.'
+        title: 'Paani re paani song',
+        url: 'https://www.youtube.com/embed/bXNQR3DE7ts',
+        description: `A sad song sung by me to showcase my work, though not a singer. 
+                      Used Voloco auto-tune app.`
       },
       {
-        title: 'Placeholder video',
-        url: 'https://www.youtube.com/embed/il2ZAZX9KpQ',
-        description: 'This is a placeholder video with no sound.'
+        title: 'Tune haath jo thaama song',
+        url: 'https://www.youtube.com/embed/XyllzBacoKY',
+        description: `A romantic song sung by me to showcase my work, though not a singer. 
+                    `
       },
       {
         title: 'Test video',
