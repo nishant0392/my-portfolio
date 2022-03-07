@@ -32,14 +32,14 @@ export class PortfolioComponent implements OnInit {
                     `
       },
       {
-        title: 'Test video',
-        url: 'https://www.youtube.com/embed/C0DPdy98e4c',
-        description: 'This is a test video for testing purpose only.'
+        title: 'Ye jo phoolon ki bele...',
+        url: 'https://www.youtube.com/embed/1zYPtC8lmmQ',
+        description: 'ROMANTIC. Acting video for demo purpose.'
       },
       {
-        title: 'Sample external link video',
-        url: 'https://www.youtube.com/embed/PCwL3-hkKrg',
-        description: "It's a sample external link video with some advertisement."
+        title: 'Makaan maalik se mera jhagra ho gaya...',
+        url: 'https://www.youtube.com/embed/HlmPmPXzkyY',
+        description: "COMEDY. A different but unique voice of mine."
       },
       {
         title: 'Bohemian Rhapsody',
