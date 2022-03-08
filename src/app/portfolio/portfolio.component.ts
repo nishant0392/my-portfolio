@@ -42,9 +42,9 @@ export class PortfolioComponent implements OnInit {
         description: "COMEDY. A different but unique voice of mine."
       },
       {
-        title: 'Bohemian Rhapsody',
-        url: 'https://www.youtube.com/embed/tgbNymZ7vqY',
-        description: 'Bohemian Rhapsody music video. Just enjoy !!'
+        title: 'Kabhi kabhi mere dil mein khayaal aata hai',
+        url: 'https://www.youtube.com/embed/TggDL9rx0ig',
+        description: 'COMEDY. A comedy clip.'
       }
     ];
   }
