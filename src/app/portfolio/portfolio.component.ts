@@ -20,6 +20,52 @@ export class PortfolioComponent implements OnInit {
   ngOnInit(): void {
     this.videos = [
       {
+        title: "Nawazuddin's style",
+        url: 'https://youtube.com/embed/vFfqzFKuK0k',
+        description: 'Display of a variety of emotions.'
+      },
+      {
+        title: 'Romantic role',
+        url: 'https://youtube.com/embed/0F2Oy5HhZ-I',
+        description: "ROMANTIC. Taken from the movie 'Aandhi'."
+      },
+      {
+        title: 'Action role',
+        //url: 'https://youtube.com/embed/shorts/f2q2dj9y5vg',
+        url: 'https://www.youtube.com/embed/f2q2dj9y5vg',
+        description: 'ACTION. My performance in an action role.'
+      },
+      {
+        title: "Sharmaji's role",
+        url: 'https://youtube.com/embed/U9gXTU2JC_c',
+        description: "COMEDY. It's a part of my script 'The Running Star'."
+      },
+      {
+        title: "Farhan's style",
+        url: 'https://youtube.com/embed/JNoLbChiTJc',
+        description: 'COMEDY. A comedy clip.'
+      },
+      {
+        title: 'Makaan maalik se mera jhagra ho gaya...',
+        url: 'https://youtube.com/embed/q1zquygNE70',
+        description: "COMEDY. Part of my script. Main character performance."
+      },
+      {
+        title: 'Kabhi kabhi mere dil mein khayaal aata hai',
+        url: 'https://youtube.com/embed/7F2rvDFwDKo',
+        description: 'COMEDY. A comedy clip.'
+      },
+      {
+        title: "Drunkard's role",
+        url: 'https://youtube.com/embed/apXYb6ggPls',
+        description: "COMEDY. My performance as a drunkard."
+      },
+      {
+        title: 'Profile video',
+        url: 'https://youtube.com/embed/luT8FMgFEmM',
+        description: 'My profile video.'
+      },
+      {
         title: 'Paani re paani song',
         url: 'https://www.youtube.com/embed/bXNQR3DE7ts',
         description: `A sad song sung by me to showcase my work, though not a singer. 
@@ -36,16 +82,6 @@ export class PortfolioComponent implements OnInit {
         url: 'https://www.youtube.com/embed/1zYPtC8lmmQ',
         description: 'ROMANTIC. Acting video for demo purpose.'
       },
-      {
-        title: 'Makaan maalik se mera jhagra ho gaya...',
-        url: 'https://www.youtube.com/embed/HlmPmPXzkyY',
-        description: "COMEDY. A different but unique voice of mine."
-      },
-      {
-        title: 'Kabhi kabhi mere dil mein khayaal aata hai',
-        url: 'https://www.youtube.com/embed/TggDL9rx0ig',
-        description: 'COMEDY. A comedy clip.'
-      }
     ];
   }
 
