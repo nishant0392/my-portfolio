@@ -61,6 +61,16 @@ export class PortfolioComponent implements OnInit {
         description: "COMEDY. My performance as a drunkard."
       },
       {
+        title: "English dialogue",
+        url: 'https://youtube.com/embed/X2yX06CY3BI',
+        description: "COMEDY. Demo for my English dialogue delivery."
+      },
+      {
+        title: "Central character's role",
+        url: 'https://youtube.com/embed/uXH1W0-Fy9c',
+        description: "COMEDY. Part of my script. Main character performance."
+      },
+      {
         title: 'Profile video',
         url: 'https://youtube.com/embed/luT8FMgFEmM',
         description: 'My profile video.'
