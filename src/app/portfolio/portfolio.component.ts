@@ -41,6 +41,11 @@ export class PortfolioComponent implements OnInit {
         description: "COMEDY. It's a part of my script 'The Running Star'."
       },
       {
+        title: "Drunkard's role",
+        url: 'https://youtube.com/embed/apXYb6ggPls',
+        description: "COMEDY. My performance as a drunkard."
+      },
+      {
         title: "Farhan's style",
         url: 'https://youtube.com/embed/JNoLbChiTJc',
         description: 'COMEDY. A comedy clip.'
@@ -54,11 +59,6 @@ export class PortfolioComponent implements OnInit {
         title: 'Kabhi kabhi mere dil mein khayaal aata hai',
         url: 'https://youtube.com/embed/7F2rvDFwDKo',
         description: 'COMEDY. A comedy clip.'
-      },
-      {
-        title: "Drunkard's role",
-        url: 'https://youtube.com/embed/apXYb6ggPls',
-        description: "COMEDY. My performance as a drunkard."
       },
       {
         title: "English dialogue",
